@@ -66,6 +66,14 @@
 	display:inline;
 }
 
+.item:after {
+	display:block;
+	content:'.';
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+
 .poster {
 	font-size:1em;
 	font-weight:300;

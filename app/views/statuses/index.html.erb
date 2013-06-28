@@ -9,7 +9,7 @@
 	<div class="item borderbox borderRadius_6px">
 		
 		<div class="item_title">
-			<a href="#" class="poster"><%= status.name %></a>
+			<strong><a href="#" class="poster"><%= status.user ? status.user.full_name : 'Anonymous' %></a></strong>
 			<span class="timeAgo"><%= "- " + time_ago_in_words(status.created_at) + " ago" %></span>
 			<%= image_tag 'xryanchen.png', :class => 'user_icon borderRadius_6px'%>
 		</div>

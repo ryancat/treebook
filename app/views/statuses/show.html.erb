@@ -2,7 +2,7 @@
 
 <p>
   <b>Name:</b>
-  <%= @status.name %>
+  <%= @status.user ? @status.user.full_name : 'Anonymous' %>
 </p>
 
 <p>
